@@ -1,0 +1,156 @@
+/* -------------------------------BASE----------------------------------- */
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+   /* transition: all 0.5s ease-in-out; */
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+    /*  */
+  /* This defines what 1rem is */
+  /* the default font-size of the browser 16 pixels. What we want is to set it to 10 pixels using percent  10 divided by 16 is 0.625 which is turn into a percent of 62.5%. .625 * 16 = 62.5 10 pixels */
+}
+
+body{
+background: var(--primary-bg);
+box-sizing: border-box;
+font-family: "lato", sans-serif;
+font-weight: 400;
+font-size: 2rem;
+color: var(--button-text);
+/* body font-size now 10px due to the change to html 62.5% */
+line-height: 1.7;
+position: relative;
+overflow-y: scroll;
+height: 100vh;
+width: 100vw;
+
+
+}
+
+:root{
+/*========== Variables light theme ==========*/
+
+  --button-text:rgb(255, 255, 255);
+
+
+    --container--bg: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+    );
+
+    --primary-bg:linear-gradient(to right top, #0d2452, #8797a5);
+ 
+
+}
+/*========== Variables Dark theme ==========*/
+.dark-theme{
+
+  
+  --button-text:#3862af;
+
+
+  --container--bg:rgba(32, 30, 30, 0.7); 
+
+  --primary-bg: #414040;
+
+}
+/*========== Variables Dark theme ==========*/
+
+  #moon {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  /* transition: all 0.5s ease-out; */
+  width: 5rem;
+  z-index: 100;
+  
+}
+
+
+.hero{
+    -webkit-backdrop-filter:blur(1rem);
+    backdrop-filter: blur(1rem);
+    background: var(--container--bg);
+}
+/* .container{
+  height: 100%;
+  padding:0 2rem;
+   -webkit-backdrop-filter:blur(1rem);
+    backdrop-filter: blur(1rem);
+    background: var(--container--bg);
+} */
+.tutorial {
+  width: 60rem;
+  text-align: center;
+  margin: auto;
+  -webkit-backdrop-filter:blur(1rem);
+    backdrop-filter: blur(1rem);
+    background: var(--container--bg);
+}
+
+figure.image {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+figure .image img {
+  width: 13.5rem;
+}
+
+.notification {
+  margin-top: 20px !important;
+}
+.title{
+  color: var(--button-text);
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.title .icon {
+  margin-left: 2rem;
+  color: var(--button-text);
+}
+
+.hero {
+  margin-bottom: 2rem;
+  
+}
+
+.forms {
+  display: flex;
+  justify-content: space-around;
+}
+
+.results {
+  max-height: 500px;
+  overflow-y: scroll;
+  
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  height: 7rem;
+}
+
+.dropdown-item img {
+  height: 6rem;
+  margin-right: 1rem;
+}
+.input{
+  font-size: 2.2rem;
+}
+.dropdown-menu{
+  font-size: 2.2rem;
+}
+.content{
+  /* font-size: 2rem; */
+}
